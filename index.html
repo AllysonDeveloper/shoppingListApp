@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>Lista de Compras</title>
+</head>
+<body>
+    <header><h1>Lista de Compras</h1></header>
+    <section class="content">
+        <div class="form-cadastro">
+            <input type="text" id="item" placeholder="Item">
+            <input type="text" id="preco" placeholder="Preço unitário">
+            <input type="text" id="quantidade" placeholder="Qtd.">
+            <button id="btn">cadastrar</button>
+        </div>
+        <p class="erro" id="erro-campo-vazio">Preencha todos os campos!</p>
+        <p class="erro" id="erro-num">Preço e quantidade devem ser valores numéricos!</p>
+        <div class="list">
+            <div id="list-header">
+                <span class="item">Item nome</span>
+                <span class="preco">Preço unitário</span>
+                <span class="quantidade">Qtd.</span>
+                <span >Total</span>
+                <span >Remover</span>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

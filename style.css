@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Saira Condensed', sans-serif
+}
+
+header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: green;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.form-cadastro{
+    text-align: center;
+}
+
+.form-cadastro input{
+    padding: 5px;
+    outline: none;
+}
+
+
+#item{
+    width: 250px;
+}
+
+#quantidade{
+    width: 80px;
+}
+
+#btn{
+    margin-left: 10px;
+    color: white;
+    background-color: orange;
+    border: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 20px;
+}
+.erro{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#erro-campo-vazio, #erro-num{
+    display: none;
+}
+.list{
+    width: 80%;
+    max-width: 700px;
+    margin-top: 80px;
+}
+
+.list-content{
+    font-size: 22px;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 40% 20% 10% 20% 10%;
+}
+
+.list span{
+    display: inline-block;
+}
+
+#list-header{
+    font-size: 22px;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 40% 20% 10% 20% 10%;
+    background-color: rgb(199, 197, 197);
+    
+}
+
+.total{
+    color: green;
+}
+
+.remover{
+    color: red;
+    cursor: pointer;
+}
