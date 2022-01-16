@@ -24,15 +24,15 @@ btn.addEventListener("click", function(){
         var item = new Item();  
         item.descricao = inputItem.value;
         item.preco = parseFloat(inputPreco.value.replace(',','.'));
-        item.qtd = parseInt(inputQtd.value);
-        item.total = item.qtd * item.preco;
+        item.qtd = parseFloat(inputQtd.value.replace(',','.'));
+        parseFloat(item.total = item.qtd * item.preco);
         var list = document.querySelector(".list");
         var listcontent = document.createElement("div");
         listcontent.setAttribute('class','list-content');
         listcontent.innerHTML = `
         <span class="item">`+item.descricao+`</span>
         <span class="preco">`+item.preco.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})+`</span>
-        <span class="quantidade">`+item.qtd+`</span>
+        <span class="quantidade">`+item['qtd']+`</span>
         <span class="total">`+item.total.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})+`</span>
         <span class="remover">X</span>
         `;
