@@ -59,7 +59,7 @@ header{
 #erro-campo-vazio, #erro-num{
     display: none;
 }
-.list{
+.list, #vlr-total{
     width: 80%;
     max-width: 700px;
     margin-top: 80px;
@@ -94,4 +94,10 @@ header{
 .remover{
     color: red;
     cursor: pointer;
+}
+
+#vlr-total{
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
 }
